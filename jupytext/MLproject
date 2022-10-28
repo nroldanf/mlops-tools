@@ -1,0 +1,10 @@
+name: mlops_project_template
+
+conda_env: conda.yml
+
+# docker_env:
+#     image: mlops-project-template-docker
+
+entry_points:
+    main:
+        command: "python test.py"
