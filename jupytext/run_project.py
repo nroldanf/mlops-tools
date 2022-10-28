@@ -24,4 +24,4 @@ if git_diff_files != ['']:
 
 
 
-mlflow.projects.run(git.Repo(".").remotes.origin.url, version=git.Repo(".").active_branch, env_manager="conda")
+mlflow.projects.run(git.Repo().remotes.origin.url, version=git.Repo(".").active_branch, env_manager="conda")
