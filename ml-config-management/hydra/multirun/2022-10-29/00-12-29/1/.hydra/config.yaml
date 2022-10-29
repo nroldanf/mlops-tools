@@ -1,0 +1,4 @@
+db:
+  driver: postgres
+  user: omry
+  pass: secret
