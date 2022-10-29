@@ -13,3 +13,6 @@
 # ---
 
 # %%
+import numpy as np
+
+# %%
