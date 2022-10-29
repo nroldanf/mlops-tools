@@ -1,0 +1,5 @@
+# Pair notebooks in subfolders of 'notebooks' to scripts in subfolders of 'scripts'
+# https://jupytext.readthedocs.io/en/latest/config.html
+[tool.jupytext.formats]
+"notebooks/" = "ipynb"
+"scripts/" = "py:percent"
