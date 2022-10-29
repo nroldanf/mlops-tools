@@ -1,0 +1,5 @@
+name: mlops_project_template
+conda_env: jupytext/conda.yaml
+entry_points:
+  main:
+    command: 'python jupytext/test.py'

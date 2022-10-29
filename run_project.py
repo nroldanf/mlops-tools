@@ -22,6 +22,6 @@ if git_diff_files != ['']:
         else:
             print("Enter either y/n")
 
+print(git.Repo(".").active_branch)
 
-
-mlflow.projects.run(git.Repo().remotes.origin.url, version=git.Repo(".").active_branch, env_manager="conda")
+mlflow.projects.run(git.Repo(".").remotes.origin.url, version=git.Repo(".").active_branch)
