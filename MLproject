@@ -1,5 +1,5 @@
 name: mlops_project_template
-conda_env: jupytext/conda.yaml
+conda_env: conda.yaml
 entry_points:
   main:
-    command: 'python jupytext/train.py'
+    command: 'python version-control-systems/train.py'

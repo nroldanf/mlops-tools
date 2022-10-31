@@ -5,3 +5,4 @@ scikit_learn==1.1.2
 python-dotenv==0.21.0
 jupyterlab==3.5.0
 jupytext==1.14.1
+hydra-core==1.2.0
