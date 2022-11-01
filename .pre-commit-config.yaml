@@ -1,6 +1,16 @@
 repos:
--   repo: https://github.com/mwouts/jupytext
-    rev: v1.14.0  # CURRENT_TAG/COMMIT_HASH
-    hooks:
-    - id: jupytext
-      args: [--from, notebooks///ipynb, --to, "scripts///py:percent"]
+- repo: https://github.com/pycqa/isort
+  rev: 5.10.1
+  hooks:
+    - id: isort
+      args: [--diff, --treat-comment-as-code "# %%"]
+- repo: https://github.com/psf/black
+  rev: 22.10.0
+  hooks:
+    - id: black
+      args: [--diff, --color, --verbose]
+      language_version: python3.9
+- repo: https://github.com/pycqa/flake8
+  rev: 5.0.4
+  hooks:
+    - id: flake8

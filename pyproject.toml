@@ -1,5 +1,25 @@
 # Pair notebooks in subfolders of 'notebooks' to scripts in subfolders of 'scripts'
 # https://jupytext.readthedocs.io/en/latest/config.html
-[tool.jupytext.formats]
-"notebooks/" = "ipynb"
-"scripts/" = "py:percent"
+[tool.jupytext]
+formats = "ipynb,py:percent"
+notebook_metadata_filter = "-all"
+cell_metadata_filter = "-all"
+[tool.isort]
+# See: https://pycqa.github.io/isort/reference/isort/profiles.html
+profile = "black"
+[tool.black]
+line-length = 79
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
